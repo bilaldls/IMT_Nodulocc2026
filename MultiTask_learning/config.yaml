@@ -1,0 +1,33 @@
+# Dataset
+dataset:
+  batch_size: 64
+  num_workers: 8
+  image_size: 224
+  val_split: 0.15
+  test_split: 0.15
+
+# Modèle
+model:
+  embed_dim: 768
+  num_patches: 14
+  shared_hidden: 512
+  classification_hidden: [256, 128]
+  localization_channels: [512, 256, 128, 64]
+  dropout: 0.3
+  freeze_encoder: true
+
+# Entraînement
+training:
+  num_epochs: 50
+  learning_rate_head: 0.001
+  learning_rate_backbone: 0.00001
+  weight_decay: 0.01
+  lambda_cls: 1.0
+  lambda_loc: 2.0
+  lambda_smooth: 0.1
+  use_focal_loss: true
+  use_amp: true
+  gradient_accumulation_steps: 1
+  grad_clip_norm: 1.0
+  scheduler_type: "cosine"
+  early_stopping_patience: 15
