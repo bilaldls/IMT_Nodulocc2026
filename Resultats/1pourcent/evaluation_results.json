@@ -1,0 +1,29 @@
+{
+  "accuracy": 0.9562467053241961,
+  "precision": 0.3333333333333333,
+  "recall": 0.012195121951219513,
+  "f1": 0.023529411764705882,
+  "auc_roc": 0.5850231808103206,
+  "confusion_matrix": [
+    [
+      1813,
+      2
+    ],
+    [
+      81,
+      1
+    ]
+  ],
+  "true_negatives": 1813,
+  "false_positives": 2,
+  "false_negatives": 81,
+  "true_positives": 1,
+  "specificity": 0.9988980716253444,
+  "sensitivity": 0.012195121951219513,
+  "lidc_accuracy": 0.0,
+  "lidc_f1": 0.0,
+  "lidc_n_samples": 4,
+  "nih_accuracy": 0.9582673005810882,
+  "nih_f1": 0.024691358024691357,
+  "nih_n_samples": 1893
+}
